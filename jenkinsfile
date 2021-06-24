@@ -8,6 +8,8 @@ pipeline {
        
             steps { 
             
+                echo "Building script..."
+            
             }
        }
             
@@ -15,12 +17,17 @@ pipeline {
        
              steps {
              
+                 echo "Testing script..."
+             
              }
         }
         
        stage("deploy") {
        
               steps {
+              
+                 echo "Deploying script"
+              
               
               }     
         }  
